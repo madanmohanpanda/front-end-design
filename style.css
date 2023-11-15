@@ -213,7 +213,13 @@ tr:hover{
     top: 1rem;
   }
   .serch-cntnr{
-    padding-left: 5rem;
+    padding-left: 5.5rem;
   }
   
+}
+
+@media screen and (max-width: 580px){
+  .fa-magnifying-glass{
+    display: none;
+  }
 }

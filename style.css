@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 :root {
   --text-size: 1.2rem;
@@ -181,4 +186,34 @@ tr:hover{
 .titel{
   font-size: 1.1rem;
   font-weight: 500;
+}
+.profile-img-sm-screen{
+  display: none;
+}
+
+/* resposive */
+
+@media (max-width: 1000px) {
+  .full{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .none{
+    display: none;
+  }
+  
+  .profile-img-sm-screen{
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+  }
+  .serch-cntnr{
+    padding-left: 5rem;
+  }
+  
 }
